@@ -1,5 +1,5 @@
 # Cleanup-Status — Tom Schmitz
-Zuletzt aktualisiert: 2026-05-31
+Zuletzt aktualisiert: 2026-06-01
 
 ## Offene Aufgaben
 
@@ -39,20 +39,22 @@ Status: TEILWEISE OFFEN
 - [ ] `_KOPIEREN_STEUER_2025.sh` — Pfad von `Finanzen/Steuer 2025/` auf `00 Privat/Finanzen privat/Finanzen/Steuer 2025/` aktualisieren (Skript liegt in `scripts/`)
 
 ### Kalender (Woche 2 — iCloud + Exchange)
-Status: OFFEN — AppleScript lokal auf Mac ausführen
+Status: ✅ ERLEDIGT (2026-06-01)
 
-- [ ] iCloud „Privat" + „Familie" → Grün (RGB: {5140, 43690, 16383})
-- [ ] iCloud „Praxis Bellheim" → Rot (RGB: {65535, 0, 0})
-- [ ] iCloud „Berufliches/KV" → Violett (RGB: {32767, 0, 65535})
-- [ ] iCloud „Firma" → Türkis (RGB: {0, 52428, 52428})
-- [ ] Exchange „SüdpfalzDOC e.V." → Orange
-- [ ] Exchange „SüdpfalzDOCs gGmbH" → Gelb
-- [ ] iPhone + iPad: Kalenderauswahl angleichen
+- [x] Privat + Familie → Grün
+- [x] Praxis Bellheim + Teampraxis Bellheim Ärzte → Rot
+- [x] Berufliches/KV + Arbeit Chris → Violett
+- [x] SüdpfalzDOCs + Kalender → Orange
+- [x] Duplikate bereinigt (CME, Deutsche Feiertage, Family-Kids, Teampraxis Bellheim, Urlaubsplanung entfernt)
+- [x] Arbeit → Arbeit Chris umbenannt (Christianes geteilter Kalender)
+- [x] Neuer Kalender „Berufliches/KV" für Tom angelegt
+- [x] iPhone + iPad: Kalenderauswahl angleichen
 
 ### MS365
-- [ ] MCP-Authentifizierung einrichten (browser-basiert, auf Mac erledigen)
+- [~] MCP-Authentifizierung (MS365): blockiert — kein M365 Business-Account vorhanden
 
 ### Mail
+- [x] Mail-Regeln angelegt (19 Regeln inkl. DMP Abrechnung)
 - [ ] 65 Entwürfe sichten
 - [ ] Outlook-Desktop abmelden
 - [ ] Web-Konto (schmitz.t@web.de) deaktivieren
@@ -74,7 +76,7 @@ Status: OFFEN — AppleScript lokal auf Mac ausführen
 ---
 
 ## Nächste Schritte (Priorität)
-1. Kalender-Farben setzen (AppleScript, lokal auf Mac)
-2. Steuer-Skript ausführen (`scripts/_KOPIEREN_STEUER_2025.sh --dry-run`)
-3. Downloads_Cloud 12 PDFs sichten
-4. MS365 authentifizieren
+1. Downloads_Cloud 12 PDFs sichten (Finder → 99 Inbox/Downloads_Cloud)
+2. ~/Downloads weiter sortieren (Umsatz-CSVs, Versicherungs-PDFs, WhatsApp-Bilder)
+3. Mail: 65 Entwürfe sichten, Outlook abmelden, Web-Konto deaktivieren
+4. Steuer-Skript testen: `bash ~/repogithub_tom/scripts/_KOPIEREN_STEUER_2025.sh --dry-run`

@@ -28,13 +28,9 @@ tell application "Calendar"
         if name of c is "Firma" then
             set color of c to {0, 52428, 52428}
         end if
-        -- SüdpfalzDOC e.V. → Orange
-        if name of c is "SüdpfalzDOC e.V." then
+        -- SüdpfalzDOCs → Orange (e.V. + gGmbH zusammengefasst)
+        if name of c is "SüdpfalzDOCs" then
             set color of c to {65535, 32767, 0}
-        end if
-        -- SüdpfalzDOCs gGmbH → Gelb
-        if name of c is "SüdpfalzDOCs gGmbH" then
-            set color of c to {65535, 65535, 0}
         end if
     end repeat
 end tell

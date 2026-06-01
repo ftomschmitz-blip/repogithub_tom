@@ -10,7 +10,8 @@ EXECUTE=false
 echo "=== Outlook: Account-Inventur ==="
 echo ""
 
-ACCOUNT_LIST=$(osascript <<'EOF'
+_TMP_AS=$(mktemp /tmp/outlook_inventory_XXXXXX.applescript)
+cat > "$_TMP_AS" <<'EOF'
 tell application "Microsoft Outlook"
     set output to {}
     try
@@ -32,7 +33,8 @@ tell application "Microsoft Outlook"
     return output as text
 end tell
 EOF
-)
+ACCOUNT_LIST=$(osascript "$_TMP_AS")
+rm -f "$_TMP_AS"
 
 echo "$ACCOUNT_LIST"
 echo ""
